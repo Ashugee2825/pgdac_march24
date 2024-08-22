@@ -1,0 +1,96 @@
+
+
+import java.lang.* 
+
+     Object
+    
+    Throwable
+    
+  
+ Exception       Error   
+  --> checked
+         
+  -- >unchecked 
+         a) ArithmeticException 
+         StringIndexOutOfBoundsException
+         ArrayIndexOutOfBoundsException
+         NegativeArraySizeException
+
+  
+
+Exception handling 
+
+we cannot stop exception to occur  but we can prevent or handle error
+
+syntax mistake --> compile time error 
+logical           logical error 
+run time           Exception 
+
+
+in case of rumtime exception program will abnormally terminate 
+
+//handling runtime error 
+//these errors cannot be stopped
+//but we can handle them 
+//in case of exception then program will abnormally terminate  
+   
+   
+  
+
+5 keywords for Exception handling 
+1) try
+2) catch
+3) throw
+4) throws
+5) finally
+   
+   
+   syntax 
+   try
+   {
+   
+   
+   }
+   catch(ArithmeticException d){}
+   catch(ArrayIndexOutOfBoundsException d){}
+   catch(Exception d){}
+   
+   
+  ==============================================
+  // int arr[]= new int[0];
+     
+    //arr[0]=22;
+		
+Q can we take array size in negative	
+	int arr[]= new int[-22];  //NegativeArraySizeException
+		 
+   
+ ====================Finally==========================
+ code written in finally block will always get executed
+ even if error is there or not ,handled or not 
+ 
+ synatx 
+ try{
+   .....
+   }
+ finally
+ {
+ }  
+ --------------
+ syntax2 
+ try{
+ 
+ ....
+ }
+ catch(....){}
+ finally{....}
+ 
+ ============user defined exception =============
+ inherit Exception or RuntimeException to your class
+ 
+//throw is used to raise exception explicilty 
+//if program throw any check exception then it is mandatory
+//for that method
+//to either surround it by try catch or write 
+//throws after method name 
+//throws will not handle exception it can be used to pass exception

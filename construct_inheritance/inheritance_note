@@ -1,0 +1,20 @@
+Abstract method 
+
+1)methods without implementation
+2) we use abstract keyword before method name 
+3) abstract methods must be  implemented by child class
+4) abstract methods are created in abstract class 
+
+Abstract class 
+ 
+ syntax 
+    abstract class Vehcile{...} 
+
+1) can have abstract and non abstract method 
+2) can have variables ,constructor
+3) abstract class cannot be instantiated   
+4)abstract class reference can be created 
+
+5) if child class doesnot implement  parent class abstract method then child 
+class must be declared abstract 
+
